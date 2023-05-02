@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.ListView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.text.Font?>
+
+<Pane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="487.0" prefWidth="600.0" style="-fx-background-color: black;" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="ContactappController">
+   <children>
+      <ListView fx:id="contactlistview" layoutX="11.0" layoutY="114.0" prefHeight="362.0" prefWidth="191.0" />
+      <Label layoutX="9.0" layoutY="-9.0" prefHeight="116.0" prefWidth="301.0" text="CONTACT" textFill="WHITE">
+         <font>
+            <Font name="Monaco" size="66.0" />
+         </font>
+      </Label>
+      <TextField fx:id="searchTextField" layoutX="217.0" layoutY="114.0" prefHeight="28.0" prefWidth="191.0" />
+      <TextField fx:id="firstnameTextField" layoutX="310.0" layoutY="201.0" prefHeight="26.0" prefWidth="269.0" />
+      <TextField fx:id="lastnameTextField" layoutX="310.0" layoutY="244.0" prefHeight="26.0" prefWidth="269.0" />
+      <TextField fx:id="emailTextField" layoutX="310.0" layoutY="295.0" prefHeight="26.0" prefWidth="269.0" />
+      <TextField fx:id="phoneTextField" layoutX="310.0" layoutY="340.0" prefHeight="26.0" prefWidth="269.0" />
+      <Button layoutX="409.0" layoutY="114.0" mnemonicParsing="false" onAction="#searchbuttonpressed" prefHeight="26.0" prefWidth="64.0" text="search" textFill="#1012b2">
+         <font>
+            <Font name="Monaco" size="13.0" />
+         </font></Button>
+      <Button layoutX="496.0" layoutY="114.0" mnemonicParsing="false" onAction="#newbuttonpressed" prefHeight="28.0" prefWidth="84.0" text="New" textFill="#1717ee">
+         <font>
+            <Font name="Monaco" size="14.0" />
+         </font></Button>
+      <Button layoutX="507.0" layoutY="405.0" mnemonicParsing="false" onAction="#savebuttonpressed" prefHeight="28.0" prefWidth="72.0" text="Save " textFill="#3919dd" />
+      <Button layoutX="319.0" layoutY="406.0" mnemonicParsing="false" onAction="#updatebuttonpressed" text="Update" textFill="#151bd0">
+         <font>
+            <Font name="Monaco" size="13.0" />
+         </font></Button>
+      <Button layoutX="385.0" layoutY="405.0" mnemonicParsing="false" onAction="#deletebuttonpressed" prefHeight="28.0" prefWidth="64.0" text="Delete" textFill="#dd1212" />
+      <Label layoutX="221.0" layoutY="205.0" prefHeight="18.0" prefWidth="84.0" text="First Name" textFill="WHITE">
+         <font>
+            <Font name="Monaco" size="13.0" />
+         </font>
+      </Label>
+      <Label layoutX="232.0" layoutY="248.0" prefHeight="18.0" prefWidth="72.0" text="Last Name" textFill="WHITE">
+         <font>
+            <Font name="Monaco" size="13.0" />
+         </font>
+      </Label>
+      <Label layoutX="263.0" layoutY="299.0" prefHeight="18.0" prefWidth="42.0" text="Email" textFill="WHITE">
+         <font>
+            <Font name="Monaco" size="13.0" />
+         </font>
+      </Label>
+      <Label layoutX="263.0" layoutY="344.0" prefHeight="18.0" prefWidth="42.0" text="Phone" textFill="WHITE">
+         <font>
+            <Font name="Monaco" size="13.0" />
+         </font>
+      </Label>
+   </children>
+</Pane>
